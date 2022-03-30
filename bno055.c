@@ -57,7 +57,7 @@ void BNO055_Config(void) {
 
 
     // Acilis modunu secme
-    // pg21 de bu modlarin detayi bulunuyor. ConfMode ile acip degerleri configure ederiz
+    // pg21 de bu modlarin detayi bulunuyor. ConfMode ile acip degerleri configure 
     uint8_t mode = CONFIGMODE;
     HAL_I2C_Mem_Write(BNO055_I2C, BNO055_ADDRESS_WRITE, BNO055_OPR_MODE, I2C_MEMADD_SIZE_8BIT, &mode, 1, 100);
     HAL_Delay(30);
